@@ -167,15 +167,20 @@ input[type=checkbox] {
         background-color: #4c9e9e;
     }
     #poster {
-        float: none;
-        position: absolute;
-        width: 900px;
+        width: 700px;
         display: block;
     }
-    .intro p {
-        text-align: center;
+    .intro {
+        display: block;
+    }
+    .intro h1,
+    p {
+        text-align: right;
         float: none;
         display: block;
+    }
+    #slider {
+        justify-content: left;
     }
 }
 
@@ -285,4 +290,12 @@ h1 {
 #slider #next:hover {
     background-color: rgba(0, 0, 0, 0.5);
     text-shadow: 0;
+}
+
+footer {
+    margin-top: 20px;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    text-align: center;
+    background: linear-gradient(90deg, rgb(25, 226, 199), rgb(231, 148, 71));
 }
