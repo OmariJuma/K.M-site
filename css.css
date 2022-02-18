@@ -1,0 +1,271 @@
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    
+    body {
+        font-family: cursive;
+        scroll-behavior: smooth;
+    }
+    
+    a {
+        text-decoration: none;
+    }
+    
+    li {
+        list-style: none;
+    }
+    /* NAVBAR STYLING STARTS */
+    
+    .navbar {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 15px;
+        color: #fff;
+        background: linear-gradient(30deg, rgb(27, 27, 226), orange);
+        margin-bottom: 30px;
+        z-index: 1;
+        position: sticky;
+        top: 0;
+        left: 0;
+    }
+    
+    .nav-links a {
+        color: #fff;
+    }
+    /* LOGO */
+    
+    .logo {
+        font-size: 32px;
+    }
+    
+    #logo {
+        height: 50px;
+        width: 50px;
+        border-radius: 50%;
+        padding-bottom: -20px;
+    }
+    /* NAVBAR MENU */
+    
+    .menu {
+        display: flex;
+        gap: 1em;
+        font-size: 18px;
+    }
+    
+    .menu li:hover {
+        background-color: #4c9e9e;
+        border-radius: 5px;
+        transition: 0.3s ease;
+    }
+    
+    .menu li {
+        padding: 5px 14px;
+    }
+    /* DROPDOWN MENU */
+    
+    .services {
+        position: relative;
+    }
+    
+    .dropdown {
+        padding: 1em 0;
+        position: absolute;
+        /*WITH RESPECT TO PARENT*/
+        display: none;
+        border-radius: 8px;
+        top: 35px;
+        background: linear-gradient(45deg, blue, orange)
+    }
+    
+    .dropdown li+li {
+        margin-top: 10px;
+    }
+    
+    .dropdown li {
+        padding: 0.5em 1em;
+        width: 8em;
+        text-align: center;
+    }
+    
+    .dropdown li:hover {
+        background-color: #4c9e9e;
+    }
+    
+    .services:hover .dropdown {
+        display: block;
+    }
+    /*RESPONSIVE NAVBAR MENU STARTS*/
+    /* CHECKBOX HACK */
+    
+    input[type=checkbox] {
+        display: none;
+    }
+    /*HAMBURGER MENU*/
+    
+    .hamburger {
+        display: none;
+        font-size: 24px;
+        user-select: none;
+    }
+    /* APPLYING MEDIA QUERIES */
+    
+    @media (max-width: 768px) {
+        .menu {
+            display: none;
+            position: absolute;
+            background: linear-gradient(45deg, blue, orange);
+            right: 0;
+            left: 0;
+            text-align: center;
+            padding: 16px 0;
+            transform: translateY(10%);
+        }
+        .menu li:hover {
+            display: inline-block;
+            background-color: #4c9e9e;
+            transition: 0.3s ease;
+        }
+        .menu li li {
+            margin-top: 12px;
+        }
+        input[type=checkbox]:checked~.menu {
+            display: block;
+        }
+        .hamburger {
+            display: block;
+        }
+        .dropdown {
+            left: 50%;
+            top: 30px;
+            background: linear-gradient(45deg, orange, blue, white);
+            transform: translateX(0%);
+            transform: translateY(-5%);
+        }
+        .dropdown li:hover {
+            background-color: #4c9e9e;
+        }
+        .intro {
+            display: block;
+        }
+        .intro img {
+            float: none;
+            position: absolute;
+            width: 900px;
+            display: block;
+        }
+        .intro h1 p {
+            text-align: center;
+            float: none;
+            display: block;
+        }
+    }
+    /*Styling the introduction section*/
+    
+    .intro {
+        display: flex;
+        margin-top: -30px;
+        color: white;
+        font-weight: bold;
+        background-color: rgb(86, 86, 221);
+    }
+    
+    .intro img {
+        width: 600px;
+        height: 465px;
+        margin-bottom: 20px;
+        border-radius: 5px;
+    }
+    
+    .intro p {
+        padding-left: 5px;
+        padding-right: 5px;
+        width: 500px;
+        display: inline-flex;
+    }
+    
+    h1 {
+        text-decoration-line: underline;
+    }
+    
+    .manifesto {
+        margin: 20px;
+        background-color: white;
+        border-radius: 5px;
+        border: 3px rgb(226, 174, 60);
+        box-shadow: 0px 0px 5px 5px blue;
+    }
+    
+    .manifesto p {
+        padding-top: 10px;
+        padding-bottom: 10px;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+    /**/
+    
+    #slider {
+        transform: translateX(30%);
+        margin-left: 15%;
+        margin-top: -5px;
+        width: 500px;
+        height: 365px;
+        overflow: hidden;
+        border: 3px rgb(231, 139, 102);
+        border-radius: 3px;
+        box-shadow: 0px 0px 5px 5px blue;
+    }
+    
+    #slider ul {
+        position: relative;
+        list-style: none;
+        height: 100%;
+        width: 10000%;
+        padding: 0;
+        margin: 0;
+        transition: all 750ms ease;
+        left: 0;
+    }
+    
+    #slider ul li {
+        position: relative;
+        height: 100%;
+        float: left;
+    }
+    
+    #slider ul li img {
+        width: 500px;
+        height: 465px;
+    }
+    
+    #slider #prev,
+    #slider #next {
+        width: 50px;
+        line-height: 50px;
+        text-align: center;
+        color: white;
+        text-decoration: none;
+        position: absolute;
+        top: 50%;
+        border-radius: 50%;
+        font-size: 2rem;
+        text-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
+        transform: translateY(-50%);
+        transition: all 150ms ease;
+    }
+    
+    #slider #prev {
+        left: 10px;
+    }
+    
+    #slider #next {
+        right: 10px;
+    }
+    
+    #slider #prev:hover,
+    #slider #next:hover {
+        background-color: rgba(0, 0, 0, 0.5);
+        text-shadow: 0;
+    }
