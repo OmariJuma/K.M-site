@@ -6,8 +6,4 @@
                 }
             }
             
-            @media screen and (max-width) {
-                #cover {
-                    margin-top: ;
-                }
-            }
+            @media screen and (max-width) {}
