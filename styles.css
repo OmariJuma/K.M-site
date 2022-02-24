@@ -1,13 +1,43 @@
-            @media screen and (min-width:720px) {
-                #cover {
-                    margin-top: -30px;
-                    max-width: 50%;
-                    max-height: 500px;
+                #icons img {
+                    display: flex-box;
+                    max-width: 50px;
+                    max-height: 50px;
                 }
-            }
-            
-            @media screen and (max-width:720px) {
-                #cover {
-                    margin-top: -30px;
+                
+                .scroll-up {
+                    position: fixed;
+                    bottom: 3%;
+                    right: 0.5%;
+                    cursor: pointer;
                 }
-            }
+                
+                .up-arrow {
+                    width: 5rem;
+                    height: 5rem;
+                    margin-right: 5px;
+                }
+                
+                @media screen and (min-width: 720px) {
+                    #cover {
+                        margin-top: -30px;
+                        max-width: 50%;
+                        max-height: 500px;
+                    }
+                    .row {
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        margin: auto;
+                    }
+                    .row p {
+                        border: solid yellow;
+                        padding-left: 50vw;
+                    }
+                }
+                
+                @media screen and (max-width:720px) {
+                    #cover {
+                        margin-top: -30px;
+                        max-height: 500px;
+                    }
+                }
