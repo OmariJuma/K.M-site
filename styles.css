@@ -1,5 +1,4 @@
                 #icons img {
-                    display: flex-box;
                     max-width: 50px;
                     max-height: 50px;
                 }
@@ -21,7 +20,7 @@
                     #cover {
                         margin-top: -30px;
                         max-width: 50%;
-                        max-height: 500px;
+                        max-height: 550px;
                     }
                     .row {
                         display: flex;
@@ -30,7 +29,6 @@
                         margin: auto;
                     }
                     .row p {
-                        border: solid yellow;
                         padding-left: 50vw;
                     }
                 }
