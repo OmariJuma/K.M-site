@@ -20,7 +20,7 @@
                     #cover {
                         margin-top: -30px;
                         max-width: 40vw;
-                        max-height: 550px;
+                        max-height: 500px;
                     }
                     .row {
                         display: flex;
@@ -29,7 +29,7 @@
                         margin: auto;
                     }
                     .row p {
-                        padding-left: 50vw;
+                        padding-left: 40vw;
                     }
                 }
                 
