@@ -1,8 +1,15 @@
-/*if (!$.fn.modal) {
-document.write('<script src="bootstrap-4.1.3-dist/js/bootstrap.min.js"> </script > ');
-document.write(' <link rel ="stylesheet" href="bootstrap-4.1.3-dist/css/bootstrap.min.css"/>');
-alert("bootstrap looded successfully");
-}*/
+// scroll to top functionality
+const scrollUp = document.getElementById("scroll-up");
+
+scrollUp.addEventListener("click", () => {
+    window.scrollTo({
+        top: 0,
+        left: 0,
+        behavior: "smooth",
+    });
+});
+
+
 var responsiveSlider = function() {
 
     var slider = document.getElementById("slider");
