@@ -1,0 +1,2 @@
+CREATE database `kennedymaina`;
+CREATE TABLE `kennedymaina`.`userscomments` ( `FirstName` VARCHAR(30) NOT NULL , `SecondName` VARCHAR(30) NOT NULL , `Email` VARCHAR(20) NOT NULL , `Message` TEXT NOT NULL , PRIMARY KEY (`Email`)) ENGINE = InnoDB;
