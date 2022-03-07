@@ -194,6 +194,11 @@
                                                     width: 500px;
                                                     height: 400px;
                                                     box-shadow: 0px 0px 15px 10px rgb(233, 108, 108);
+                                                    /*Carousel slider custom styles*/
+                                                }
+                                                .carousel {
+                                                    max-width: 750px;
+                                                    margin-left: 20vw;
                                                 }
                                             }
                                             
