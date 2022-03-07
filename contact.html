@@ -43,7 +43,7 @@
 
     <div class="container form-container">
         <h1>Please give us your comments.&#128231;</h1>
-        <form action="connector.php" method="post" role="form">
+        <form action="connector.inc.php" method="POST" role="form">
             <div class="form-group">
                 <label for="FirstName">Enter your first name</label>
                 <input type="text" name="FirstName" id="FirstName" class="form-control" placeholder="E.g John" required>
@@ -54,13 +54,13 @@
             </div>
             <div class="form-group ">
                 <label for="email ">Enter your email address</label>
-                <input type="Email " id="Email " class="form-control " placeholder="example@gmail.com " required>
+                <input type="Email" id="Email" class="form-control " name="Email" placeholder="example@gmail.com " required>
             </div>
             <div class="form-group ">
                 <label for="message ">Enter your message below</label>
                 <textarea name="Message" id="Message " cols="30 " rows="10 " Placeholder="Enter your message... " required></textarea>
             </div>
-            <button type="submit " class="btn btn-primary " id="button ">Submit</button>
+            <button type="submit" class="btn btn-primary" id="button" name="submit">Submit</button>
         </form>
     </div>
     <i class="scroll-up" id="scroll-up"><img
