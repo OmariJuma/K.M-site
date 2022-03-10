@@ -1,0 +1,15 @@
+---
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home/kennedy2/public_html/Mygithub
+    - /bin/cp index.html $DEPLOYPATH
+    - /bin/cp style.css $DEPLOYPATH
+     - /bin/cp css.css $DEPLOYPATH 
+     - /bin/cp meet.html $DEPLOYPATH
+      - /bin/cp contact.html $DEPLOYPATH
+       - /bin/cp integrate.js $DEPLOYPATH
+        - /bin/cp icons/* $DEPLOYPATH
+         - /bin/cp images/* $DEPLOYPATH
+          - /bin/cp videos/* $DEPLOYPATH
+           - /bin/cp connector.inc.php $DEPLOYPATH
+            - /bin/cp database.SQL $DEPLOYPATH
