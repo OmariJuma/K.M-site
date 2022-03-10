@@ -1,19 +1,20 @@
 
 <?php
 $server="localhost";
-$user="root";
-$pwd=" ";
-$dbase="kennedymaina"; 
+$user="Public";
+$pwd="gitHub5400";
+$dbase="kennedy2_Response"; 
 
 
 $con=mysqli_connect($server,$user,$pwd,$dbase);
-$FirstName=$_POST['FirstName'];
-$SecondName=$_POST['SecondName'];
-$Email=$_POST['Email'];
-$Message=$_POST['Message'];
-$sql="INSERT INTO userscomments(FirstName,SecondName,Email, `Message`) VALUES(`$FirstName`,`$SecondName`,`$Email`,`$Message`);";
+
+$FirstName=mysqli_real_escape_string($con,$_POST['FirstName']);
+$SecondName=mysqli_real_escape_string($con,$_POST['SecondName']);
+$Email=mysqli_real_escape_string($con,$_POST['Email']);
+$Message=mysqli_real_escape_string($con,$_POST['Message']);
+$sql="INSERT INTO GeneralComments(FirstName,SecondName,Email, `Message`) VALUES(`$FirstName`,`$SecondName`,`$Email`,`$Message`);";
 mysqli_query($con, $sql);
-header("location:home.html?feedback success");
+header("location:index.html?feedback=success");
 
 
 
