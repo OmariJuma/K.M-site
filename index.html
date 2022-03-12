@@ -42,6 +42,9 @@
             </div>
         </ul>
     </nav>
+    <nav class="support">
+        <p>We are humbly calling upon well wishers to help fund Kennedy in his campaign and rallies. Your contribution will be highly appreciated, please send your contributions to this number <strong>+254722501148</strong></p>
+    </nav>
 
     <body>
         <div class="container-fluid">
@@ -182,7 +185,7 @@
                 </div>
                 <div class="col-lg-3 col-xs-12 col-md-4 col-sm-6 ">
                     <div class="thumbnail manifesto ">
-                        <a href="images/talent.jpg "><img src="images/talent.jpg " alt=" "></a>
+                        <a href="images/talent.jpg "><img src="images/sporty.jpg" alt=" "></a>
                         <div class="cap ">
                             <p>“3) Foster and nurture talent through competitions and providing professional mentors”</p>
                         </div>
@@ -229,20 +232,40 @@
                 </div>
 
             </div>
-            <div class="row block bg-success">
-                <p>We are humbly calling upon well wishers to help fund Kennedy in his campaign and rallies. Your contribution will be highly appreciated, please send your contributions to this number <strong>+254722501148</strong></p>
-            </div>
-            <div class="row block bg-info">
-                <p>Do you have any comment regarding the content above? Please fill the form below &#128578;
 
-                </p>
-            </div>
+            <section style="background-color:#c9e4aa;" id="generalComment">
+
+                <h1>Do you have any comment for Kennedy? Please fill the form below&#128231;</h1>
+                <div class="container form-container" style="background-color:#c9e4aa;">
+
+                    <head>Please type your comment. Your details will not be published&#128578;</head>
+                    <form action="connector.inc.php" method="POST" role="form">
+                        <div class="form-group">
+                            <label for="FirstName">Enter your first name</label>
+                            <input type="text" name="firstname" id="FirstName" class="form-control" placeholder="E.g John" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="SecondName" required>Enter your Second Name</label>
+                            <input type="text" name="secondname" id="SecondName" class="form-control " placeholder="E.g Doe " required>
+                        </div>
+                        <div class="form-group ">
+                            <label for="email ">Enter your email address</label>
+                            <input type="email" id="Email" class="form-control " name="email" placeholder="example@gmail.com " required>
+                        </div>
+                        <div class="form-group ">
+                            <label for="Comment">Enter your message below</label>
+                            <textarea name="comm" id="Message " cols="30 " rows="10 " Placeholder="Enter your message... " required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary" id="button" name="submit">Submit</button>
+                    </form>
+                </div>
+            </section>
             <div class="row block bg-warning">
-                <p>If you have experienced any difficulties, anomalies or you have identified bugs please send us an email at
-                    <a href="developers@kennedymaina.co.ke" target="_blank">developers@kennedymaina.co.ke</a> or click the following link to fill the form &#128526;
+                <p>If you have experienced any difficulties, anomalies or you have identified bugs? Please click the following link to fill the form &#128526;
                     <a class="btn btn-primary" href="contact.html " role="button" style="margin-top:5px;">Click Me</a>
                 </p>
             </div>
+        </div>
 
 
         </div>
