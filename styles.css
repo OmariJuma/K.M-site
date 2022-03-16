@@ -205,6 +205,9 @@
                                                     max-width: 750px;
                                                     margin-left: 20vw;
                                                 }
+                                                .thumbnail img {
+                                                    max-height: 30vh;
+                                                }
                                             }
                                             
                                             @media screen and (max-width:768px) {
@@ -228,15 +231,15 @@
                                             @media only screen and(max-width:360x) {
                                                 #slider {
                                                     position: relative;
-                                                    width: 320px;
+                                                    width: 80vw;
                                                     height: 400px;
                                                     overflow: hidden;
                                                     border: 3px rgb(231, 139, 102);
                                                     border-radius: 3px;
                                                     box-shadow: 0px 0px 15px 10px rgb(233, 108, 108);
                                                 }
-                                                #slider ul li img {
-                                                    width: 320px;
+                                                #slider img {
+                                                    width: 280px;
                                                     height: 400px;
                                                 }
                                             }
