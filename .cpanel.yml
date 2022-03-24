@@ -1,6 +1,6 @@
 ---
 deployment:
   tasks:
-    - export DEPLOYPATH=/home/kennedy2/public_html/Mygithub
+    - export DEPLOYPATH=/home/kennedy2/public_html/myfiles
     - /bin/cp -R Project Mwesh $DEPLOYPATH
   
