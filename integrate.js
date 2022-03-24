@@ -64,3 +64,5 @@ window.onload = function() {
     responsiveSlider();
 
 }
+
+//multiple slider section functionality

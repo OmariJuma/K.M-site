@@ -182,6 +182,16 @@
                                                 padding: 20px;
                                             }
                                             
+                                            .alert {
+                                                width: 300px;
+                                                height: 200%;
+                                                position: sticky;
+                                                z-index: 1;
+                                                top: 0;
+                                                left: 0;
+                                                float: right;
+                                            }
+                                            
                                             @media screen and (min-width: 769px) {
                                                 #cover {
                                                     margin-top: -20px;
@@ -231,6 +241,7 @@
                                                     width: 100%;
                                                 }
                                             }
+                                            /*Multiple slider section styling*/
                                             
                                             @media only screen and(max-width:360x) {
                                                 #slider {

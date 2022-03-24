@@ -26,9 +26,8 @@
         justify-content: space-between;
         padding: 15px;
         color: #fff;
-        background: linear-gradient(90deg, rgb(25, 226, 199), rgb(231, 148, 71));
-        margin-bottom: 15px;
-        margin-top: -10px;
+        background: linear-gradient(45deg, orange, blue);
+        margin: -10px -20px 15px -20px;
         z-index: 1;
         position: sticky;
         top: 0;
@@ -41,20 +40,17 @@
         justify-content: center;
         padding: 15px;
         display: flex;
-        background: #c9e4aa;
+        background: rgb(114, 205, 233);
         margin-bottom: 30px;
         height: auto;
         margin-left: -40px;
         margin-right: -40px;
-        position: static;
-        top: 1px;
-        left: 0;
         padding: 0 20px 0 30px;
         box-shadow: 0 5px 3px 3px grey;
     }
     
     .nav-links a {
-        color: #fff;
+        color: orange;
     }
     /* LOGO */
     
@@ -104,7 +100,7 @@
         .menu {
             display: none;
             position: absolute;
-            background: linear-gradient(45deg, blue, orange);
+            background: linear-gradient(45deg, orange, blue);
             right: 0;
             left: 0;
             text-align: center;
@@ -130,12 +126,19 @@
     }
     
     footer {
-        margin: 0 -20px;
+        color: white;
+        font-family: "Roboto", sans-serif;
+        font-size: 16px;
         margin-top: 20px;
         padding-top: 10px;
         padding-bottom: 10px;
         text-align: center;
-        background: linear-gradient(90deg, rgb(25, 226, 199), rgb(231, 148, 71));
+        background: linear-gradient(90deg, orange, blue);
+    }
+    
+    footer a {
+        color: orange;
+        font-family: "Roboto", sans-serif;
     }
     
     @keyframes nav-transition {
