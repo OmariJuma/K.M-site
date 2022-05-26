@@ -1,6 +1,6 @@
 
 <?php
-$server="localhost";
+$server="localhost:3306";
 $user="Kennedy2_Public";
 $pwd="gitHub5400";
 $dbase="kennedy2_Response";
@@ -16,7 +16,7 @@ if(isset($_POST['submit'])){
         $secondname=mysqli_real_escape_string($conn,$_POST['secondname']);
         $email=mysqli_real_escape_string($conn,$_POST['email']);
         $comm=mysqli_real_escape_string($conn,$_POST['comm']);
-        $sql="insert into kennedy2_GeneralComments(firstname, secondname, email, comm) values ('$firstname','$secondname','$email','$comm');";
+        $sql="insert into GeneralComments(FirstName, SecondName, Email, Comment) values ('$firstname','$secondname','$email','$comm');";
         $run=mysqli_query($conn,$sql);
         if($run==true)
         {
@@ -33,7 +33,7 @@ if(isset($_POST['submit'])){
 
 } 
 else{
-    echo "All fields required";
+    header("location:index.html? feedback=error occurred");
 }
  
 
